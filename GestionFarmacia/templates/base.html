@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Farmacia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'base' %}">Inicio</a></li>
+                <li><a href="{% url 'registrar_pedido' %}">Registrar Pedido</a></li>
+                <li><a href="{% url 'pedidos' %}">Ver Pedidos</a></li>
+                <li><a href="{% url 'inventario' %}">Inventario</a></li>
+                <li><a href="{% url 'sucursales' %}">Sucursales</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>© 2025 Gestión de Farmacia</p>
+    </footer>
+</body>
+</html>
